@@ -1,0 +1,38 @@
+.sa-card{
+  display: block;
+  height: 50vh;
+  width: 25vw;
+  background: red;
+  border: 2px solid black;
+
+}
+img{
+  width: 100%;
+}
+.sa-card:hover{
+  height: 60vh;
+  width: 30vw;
+  z-index: 2;
+  animation-duration: 2s;
+  animation-name: enlarge;
+
+  position:absolute;
+  transform: scale(1.5);
+
+}
+@keyframes enlarge {
+  from{
+
+    z-index: 0;
+
+    transform: scale(1);
+
+  }
+  to{
+
+    z-index: 2;
+
+    position: absolute;
+    transform: scale(1.2);
+  }
+}
